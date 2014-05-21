@@ -18,5 +18,7 @@ http {
   client_max_body_size 100m;
   gzip on;
 
+  index index.php index.html index.htm;
+
   include sites/*.conf;
 }
