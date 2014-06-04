@@ -1,12 +1,3 @@
-#
-# Cookbook Name:: nginx
-# Recipe:: default
-#
-# Copyright (C) 2013 Logan Koester
-# 
-# All rights reserved - Do Not Redistribute
-#
-
 package('nginx') { action :install }
 
 service 'nginx' do

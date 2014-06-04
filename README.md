@@ -1,22 +1,32 @@
-# Gibson nginx
+# nginx cookbook
+
+> A simple nginx configuration.
 
 ## Installation
 
 Using [Berkshelf](http://berkshelf.com/), add the nginx cookbook to your Berksfile.
 
 ```ruby
-    cookbook 'nginx', git: 'git@git.ldk.io:logankoester/gibson.git', rel: 'chef/cookbooks/nginx', branch: 'master'
+cookbook 'nginx', github: 'logankoester/chef-nginx', branch: 'master'
 ```
 
 Then run `berks` to install it.
 
-## Default
+## default recipe
 
 Installs and starts nginx service.
 
 ### Usage
 
 Add `recipe[nginx::default]` to your run list.
+
+## php_fpm recipe
+
+Installs php and php-fpm for nginx.
+
+### Usage
+
+Add `recipe[nginx::php_fpm]` to your run list.
 
 ## Attributes
 

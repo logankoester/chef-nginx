@@ -1,12 +1,3 @@
-#
-# Cookbook Name:: nginx
-# Recipe:: php_fm
-#
-# Copyright (C) 2014 Logan Koester
-# 
-# All rights reserved - Do Not Redistribute
-#
-
 package('php') { action :install }
 package('php-fpm') { action :install }
 
