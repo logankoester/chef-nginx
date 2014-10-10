@@ -1,5 +1,6 @@
 worker_processes 4;
 user http http;
+<% if node['nginx']['supervisor'] %>daemon off;<% end %>
 
 events {
   worker_connections 2048;
