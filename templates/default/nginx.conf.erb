@@ -21,5 +21,7 @@ http {
 
   index index.php index.html index.htm;
 
-  include sites/*.conf;
+<% node['nginx']['include_paths'].each do |path| %>
+  include <%= path %>;
+<% end %>
 }
