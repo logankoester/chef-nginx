@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+### v0.4.1
+- Adjusts `php-fpm` value `pm.max_children` from 5 to 24
+
 ### v0.4.0
 - Adds optional include_paths for additional nginx config
 
