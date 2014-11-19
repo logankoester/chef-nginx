@@ -36,18 +36,24 @@ Refer to `attributes/default.rb` for details.
 
 ## Development
 
-    # Start an archlinux vm
-    cd nginx
-    vagrant up 
+You should have Ruby and Rubygems already installed.
+
+    # Clone the repository
+    $ git clone git@github.com:logankoester/chef-nginx.git
+    $ cd chef-nginx
+
+    # Install Ruby gem dependencies
+    $ bundle install
+
+    # Install with Berkshelf
+    $ berks install
+
+    # Start the Guard watcher
+    $ bundle exec guard start
 
     # Edit files...
-
-    # Run again
-    vagrant provision 
-
-    # Verify
-    vagrant ssh
+    # Spec and Foodcritic will verify your changes when a file is modified
 
 ## Author
 
-Author:: Logan Koester (<logan@logankoester.com>)
+Copyright (c) 2014 [Logan Koester](http://logankoester.com). Released under the MIT license. See `LICENSE` for details.
