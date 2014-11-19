@@ -1,6 +1,8 @@
 # nginx cookbook
-
 > A simple nginx configuration.
+
+[![Build Status](http://ci.ldk.io/logankoester/chef-nginx/badge)](http://ci.ldk.io/logankoester/chef-nginx/)
+[![Gittip](http://img.shields.io/gittip/logankoester.png)](https://www.gittip.com/logankoester/)
 
 ## Installation
 
