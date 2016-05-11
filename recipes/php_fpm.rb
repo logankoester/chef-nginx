@@ -1,5 +1,6 @@
 package('php') { action :install }
 package('php-fpm') { action :install }
+package('php-gd') { action :install }
 
 template '/etc/php/php.ini' do
   mode '0644'

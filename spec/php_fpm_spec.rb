@@ -10,9 +10,10 @@ describe 'nginx::php_fpm' do
     ChefSpec::SoloRunner.new.converge(described_recipe)
   end
 
-  it 'installs the php and php-fpm packages' do
+  it 'installs the php, php-fpm and php-gd packages' do
     expect(chef_run).to install_package 'php'
     expect(chef_run).to install_package 'php-fpm'
+    expect(chef_run).to install_package 'php-gd'
   end
 
   it 'creates php-fpm.conf' do
