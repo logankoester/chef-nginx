@@ -56,4 +56,4 @@ You should have Ruby and Rubygems already installed.
 
 ## Author
 
-Copyright (c) 2014 [Logan Koester](http://logankoester.com). Released under the MIT license. See `LICENSE` for details.
+Copyright (c) 2014-2016 [Logan Koester](http://logankoester.com). Released under the MIT license. See `LICENSE` for details.
