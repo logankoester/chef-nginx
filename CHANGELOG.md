@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+### v0.4.3
+- Sets fastcgi_buffer_size to better accomodate WordPress
+
 ### v0.4.2
 - php_fpm recipe now installs the `php-gd` package.
 - Removes extension directives from php.ini for dropped/built-in extensions in PHP 7.0

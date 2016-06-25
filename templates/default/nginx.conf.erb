@@ -21,6 +21,9 @@ http {
 
   index index.php index.html index.htm;
 
+  fastcgi_buffers 16 16k;
+  fastcgi_buffer_size 32k;
+
 <% node['nginx']['include_paths'].each do |path| %>
   include <%= path %>;
 <% end %>
