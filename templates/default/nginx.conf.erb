@@ -1,3 +1,7 @@
+<% node['nginx']['load_modules'].each do |module_to_load| %>
+load_module <%= module_to_load %>;
+<% end -%>
+
 worker_processes 4;
 user http http;
 <% if node['nginx']['supervisor'] %>daemon off;<% end %>

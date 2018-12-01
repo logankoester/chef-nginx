@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+### v0.4.4
+- Support load_module directive
+
 ### v0.4.3
 - Sets fastcgi_buffer_size to better accomodate WordPress
 
